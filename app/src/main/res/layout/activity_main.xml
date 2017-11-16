@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bwie.taobao.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frag_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_footer"></FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/main_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGray"
+        android:layout_alignParentBottom="true">
+
+        <RadioGroup
+            android:id="@+id/radiogroup_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/button_home_main"
+                android:text="首页"
+                android:textColor="@drawable/button_selector"
+                android:drawableTop="@drawable/home_draw_selector"
+                style="@style/RadioButton_Nav"/>
+
+            <RadioButton
+                android:id="@+id/button_class_main"
+                android:text="分类"
+                android:textColor="@drawable/button_selector"
+                android:drawableTop="@drawable/type_draw_selector"
+                style="@style/RadioButton_Nav"/>
+
+            <RadioButton
+                android:id="@+id/button_cart_main"
+                android:text="购物"
+                android:textColor="@drawable/button_selector"
+                android:drawableTop="@drawable/cart_draw_selector"
+                style="@style/RadioButton_Nav"/>
+
+            <RadioButton
+                android:id="@+id/button_user_main"
+                android:text="个人"
+                android:textColor="@drawable/button_selector"
+                android:drawableTop="@drawable/user_draw_selector"
+                style="@style/RadioButton_Nav"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bwie.user.activity.LoginActivity"
+    android:weightSum="1">
+
+
+    <ImageView
+        android:id="@+id/login_head"
+        android:layout_width="match_parent"
+        android:layout_height="157dp"
+        app:srcCompat="@mipmap/uik_nav_home_selected" />
+
+    <EditText
+        android:id="@+id/login_name"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:hint="手机号/会员名/邮箱"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/login_pass"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="密码"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/text_register"
+        android:text="新用户注册"
+        android:textSize="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="right"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:text="登录"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/shape"
+        android:textColor="#fff"
+        android:textSize="20dp"/>
+
+
+</LinearLayout>

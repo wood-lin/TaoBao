@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colororange"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/id_zxing"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            app:srcCompat="@mipmap/ic_normal_code"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="3"
+            android:hint="请输入搜索内容"
+            android:drawableRight="@mipmap/ic_normal_search"
+            android:background="#dc3000"/>
+
+        <ImageView
+            android:id="@+id/id_message"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            app:srcCompat="@mipmap/ic_normal_message"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+     <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/xre_xrv"
+        android:layout_height="match_parent">
+    </com.jcodecraeer.xrecyclerview.XRecyclerView>
+
+
+</LinearLayout>

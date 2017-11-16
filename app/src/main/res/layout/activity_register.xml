@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bwie.user.activity.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#ff5a00"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/reg_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@mipmap/btn_back_detail_normal" />
+        <TextView
+            android:id="@+id/textView"
+            android:text="新用户注册"
+            android:layout_width="304dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="0.21" />
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/reg_name"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:hint="请输入用户名"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/reg_pass"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="请输入密码"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/reg_pass2"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="请确认密码"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/reg_email"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:hint="请输入邮箱"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/login_reg"
+        android:text="注册"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/shape"
+        android:textColor="#fff"
+        android:textSize="20dp"/>
+
+
+</LinearLayout>
